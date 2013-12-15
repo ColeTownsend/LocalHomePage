@@ -1,136 +1,503 @@
+@charset "UTF-8";
+/*!
+ *
+.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+
+	.                                      '||            .
+  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....
+   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...||
+   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||
+   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...'
+		.. |      ||               ||
+		 ''      ''''             ''''      A Typographic Starter Kit
+
+  URL ........... http://typeplate.com
+  VERSION ....... 1.1.2
+  Github ........ https://github.com/typeplate/typeplate.github.io
+  AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+  LICENSE ....... Creative Commmons Attribution 3.0
+  LICENSE URL ... http://creativecommons.org/licenses/by/3.0
+
+ .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+ *
+ */
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+  unicode-range: U+0026; }
+
+@font-face {
+  font-family: "Ampersand";
+  src: local("Georgia");
+  unicode-range: U+270C; }
+
+/* line 392, ../scss/_typeplate.scss */
 body {
-    padding: 0;
-    margin: 0;
-}
+  word-wrap: break-word; }
 
+/* line 396, ../scss/_typeplate.scss */
+pre code {
+  word-wrap: normal; }
+
+/**
+ * Dropcap Sass @include
+ * Use the following Sass @include with any selector you feel necessary.
+ *
+	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
+ *
+ * Extend this object into your custom stylesheet. Let the variables do the work.
+ *
+ */
+/* line 521, ../scss/_typeplate.scss */
+html {
+  font: normal 112.5%/1.65 serif; }
+
+/* line 529, ../scss/_typeplate.scss */
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  color: #444444; }
+
+/* line 540, ../scss/_typeplate.scss */
+small {
+  font-size: 65%; }
+
+/* line 563, ../scss/_typeplate.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0; }
+
+/* line 578, ../scss/_typeplate.scss */
+.tera {
+  font-size: 117px;
+  font-size: 6.5rem;
+  margin-bottom: 0.25385rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.giga {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-bottom: 0.33rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.mega {
+  font-size: 72px;
+  font-size: 4rem;
+  margin-bottom: 0.4125rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.alpha {
+  font-size: 60px;
+  font-size: 3.33333rem;
+  margin-bottom: 0.495rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.beta, h1, h2 {
+  font-size: 48px;
+  font-size: 2.66667rem;
+  margin-bottom: 0.61875rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.gamma, h3 {
+  font-size: 36px;
+  font-size: 2rem;
+  margin-bottom: 0.825rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.delta, h4 {
+  font-size: 24px;
+  font-size: 1.33333rem;
+  margin-bottom: 1.2375rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.epsilon, h5 {
+  font-size: 21px;
+  font-size: 1.16667rem;
+  margin-bottom: 1.41429rem; }
+
+/* line 578, ../scss/_typeplate.scss */
+.zeta, h6 {
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 1.65rem; }
+
+/* line 618, ../scss/_typeplate.scss */
+p {
+  margin: auto auto 1.5em; }
+  /* line 623, ../scss/_typeplate.scss */
+  p + p {
+    text-indent: 1.5em;
+    margin-top: -1.5em; }
+
+/* line 648, ../scss/_typeplate.scss */
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none; }
+
+/* line 656, ../scss/_typeplate.scss */
+pre code {
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap; }
+
+/* line 661, ../scss/_typeplate.scss */
+pre {
+  white-space: pre; }
+
+/* line 665, ../scss/_typeplate.scss */
+code {
+  white-space: pre;
+  font-family: monospace; }
+
+/**
+ * Abbreviations Markup
+ *
+	<abbr title="hyper text markup language">HMTL</abbr>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/* line 681, ../scss/_typeplate.scss */
+abbr {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray; }
+  /* line 683, ../scss/_typeplate.scss */
+  abbr[title]:hover {
+    cursor: help; }
+
+/* line 697, ../scss/_typeplate.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222; }
+
+/* line 707, ../scss/_typeplate.scss */
+p + .drop-cap {
+  text-indent: 0;
+  margin-top: 0; }
+
+/* line 423, ../scss/_typeplate.scss */
+.drop-cap:first-letter {
+  float: left;
+  margin: inherit;
+  padding: inherit;
+  font-size: 4em;
+  font-family: inherit;
+  line-height: 1;
+  text-indent: 0;
+  background: transparent;
+  color: inherit; }
+
+/**
+ * Lining Definition Style Markup
+ *
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/* line 462, ../scss/_typeplate.scss */
+.lining dt,
+.lining dd {
+  display: inline;
+  margin: 0; }
+/* line 469, ../scss/_typeplate.scss */
+.lining dt + dt:before,
+.lining dd + dt:before {
+  content: "\A";
+  white-space: pre; }
+/* line 477, ../scss/_typeplate.scss */
+.lining dd + dd:before {
+  content: ", "; }
+/* line 481, ../scss/_typeplate.scss */
+.lining dd:before {
+  content: ": ";
+  margin-left: -0.2rem; }
+
+/**
+ * Dictionary Definition Style Markup
+ *
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/* line 489, ../scss/_typeplate.scss */
+.dictionary-style dt {
+  display: inline;
+  counter-reset: definitions; }
+  /* line 493, ../scss/_typeplate.scss */
+  .dictionary-style dt + dt:before {
+    content: ", ";
+    margin-left: -0.2rem; }
+/* line 499, ../scss/_typeplate.scss */
+.dictionary-style dd {
+  display: block;
+  counter-increment: definitions; }
+  /* line 502, ../scss/_typeplate.scss */
+  .dictionary-style dd:before {
+    content: counter(definitions,decimal) ". "; }
+
+/**
+ * Blockquote Markup
+ *
+		<figure>
+			<blockquote cite="">
+				<p></p>
+			</blockquote>
+			<figcaption>
+				<cite>
+					<small><a href=""></a></small>
+				</cite>
+			</figcaption>
+		</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Pull Quotes Markup
+ *
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+/* line 791, ../scss/_typeplate.scss */
+.pull-quote {
+  position: relative;
+  padding: 1em; }
+  /* line 364, ../scss/_typeplate.scss */
+  .pull-quote:before, .pull-quote:after {
+    height: 1em;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 4em;
+    color: #dc976e; }
+  /* line 371, ../scss/_typeplate.scss */
+  .pull-quote:before {
+    content: '“';
+    top: 0;
+    left: 0; }
+  /* line 376, ../scss/_typeplate.scss */
+  .pull-quote:after {
+    content: '”';
+    bottom: 0;
+    right: 0; }
+
+/**
+ * Figures Markup
+ *
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
+ *
+ * Extend this object into your markup.
+ *
+ */
+/* line 1, ../scss/_styles.scss */
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  font-family: "Proxima Nova", "Avenir Next", "Proxima Nova", "Basetica-Med";
+  background-color: whitesmoke;
+  color: #2d1e1c; }
+
+/* line 14, ../scss/_styles.scss */
 .canvas {
-	width:75%;
-	margin: 0;
-	padding:15px 55px;
-	background-color: #FFF;
-	}
+  width: 75%;
+  margin: 0;
+  padding: 15px 55px; }
 
+/* line 20, ../scss/_styles.scss */
 ul {
-	list-style: none; 
-	margin:10px 0 5px 0;
-	padding: 0;
-	}
+  list-style: none;
+  margin: 10px 0 10px 0;
+  padding: 0; }
 
+/* line 26, ../scss/_styles.scss */
 nav ul li {
-    display: block;
-    margin: 0;
-    font-size: .8em;
-}
+  display: block;
+  margin: 0;
+  font-size: 16px; }
 
-
+/* line 33, ../scss/_styles.scss */
 li {
-	font-size: 1rem;
-	line-height: 1.8rem;
-	font-family: helvetica, arial, sans-serif;
-}
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: bold; }
 
+/* line 39, ../scss/_styles.scss */
 li a {
-	text-decoration: none;
-	color: #444;
-}
+  text-decoration: none;
+  color: #2d1e1c; }
 
+/* line 45, ../scss/_styles.scss */
 .sites li {
-	width: 100%;
-	height: 2rem;
-	position: relative;
-	background-color: #F4F4F4;
-	margin: 2px 0 2px 0;
-	padding: 0;
-	float: left;
-}
+  width: 100%;
+  height: 24px;
+  position: relative;
+  margin: 2px 0 2px 0;
+  padding: 10px;
+  float: left;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
 
+/* line 59, ../scss/_styles.scss */
 .sites li:hover {
-	background-color: #EEE;
-}
+  background-color: gainsboro;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  opacity: .7; }
 
-
+/* line 70, ../scss/_styles.scss */
 .icon, .sites img {
-	float: right;
-	font-size: .7rem;
-	display: inline-block;
-	text-indent: -10000px;
-	background-size: 1.2rem;
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 2rem;
-	width: 2rem;
-}
+  float: right;
+  font-size: .7rem;
+  display: inline-block;
+  text-indent: -10000px;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 16px;
+  width: 16px; }
 
+/* line 82, ../scss/_styles.scss */
 .sites img, .sites .no-img {
-	float: left;
-	height: 2rem;
-	width: 2rem;
-	background-color: #EEE;
-}
+  float: left;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 10px;
+  background-color: #f9f9f9; }
 
+/* line 91, ../scss/_styles.scss */
 .sites .no-img {
-	background-color: #999;
-}
+  background-color: white; }
 
-
+/* line 96, ../scss/_styles.scss */
 .wp {
-	background-color: #21759a;
-	background-image: url('/img/icon-wp.png');
-}
+  background-color: #21759a;
+  background-image: url("/img/icon-wp.png"); }
 
+/* line 101, ../scss/_styles.scss */
 .site {
-	padding: 0 10px;
-}
+  padding: 0 10px; }
 
+/* line 106, ../scss/_styles.scss */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
 
+/* line 111, ../scss/_styles.scss */
 .cf:after {
-    clear: both;
-}
-
-
-
+  clear: both; }
 
 @media all and (min-width: 699px) {
+  /* line 123, ../scss/_styles.scss */
+  .canvas {
+    width: 80%;
+    margin: 20px auto; }
 
-	body {
-	    background-color: #DDD;
-	}
-	
-	.canvas {
-		width:80%;
-		margin: 20px auto;
-		box-shadow: 0 0 20px #AAA;
-		}
-	
-	.sites li {
-		width: 45%;
-		height: 2rem;
-		position: relative;
-		background-color: #F4F4F4;
-		margin: 2px 3% 2px 0;
-		padding: 0;
-		float: left;
-	}
-	
-	nav ul li {
-	    display: inline;
-	    margin: 5px 5px 5px 0;
-	    padding: 4px 12px;
-		background-color: #EEE;
-		border-radius: 2px;
-	}
+  /* line 128, ../scss/_styles.scss */
+  .sites li {
+    width: 45%;
+    height: 2rem;
+    position: relative;
+    margin: 2px 3% 2px 0;
+    padding: 0;
+    float: left; }
 
-
-
-}
-
+  /* line 137, ../scss/_styles.scss */
+  nav ul li {
+    display: inline;
+    margin: 5px 5px 5px 0;
+    padding: 4px 12px;
+    border-radius: 2px;
+    color: #6c4843; }
+    /* line 143, ../scss/_styles.scss */
+    nav ul li:first-child {
+      margin-left: 0;
+      padding-left: 0; }
+    /* line 147, ../scss/_styles.scss */
+    nav ul li a {
+      -webkit-transition: .2s all ease;
+      -moz-transition: .2s all ease;
+      -ms-transition: .2s all ease;
+      -o-transition: .2s all ease;
+      transition: .2s all ease; }
+      /* line 153, ../scss/_styles.scss */
+      nav ul li a:hover {
+        opacity: .5;
+        -webkit-transit: .3 all ease;
+        -moz-transit: .3 all ease;
+        -ms-transit: .3 all ease;
+        -o-transit: .3 all ease;
+        transit: .3 all ease; } }
+/* line 168, ../scss/_styles.scss */
 .admin {
-	background-color: #000000;
-	background-image: url('/img/icon-gear.png');
-}
-
+  background-image: url("/img/icon-gear.png"); }

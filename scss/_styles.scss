@@ -1,0 +1,171 @@
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	font-family: $font-family;
+	background-color: $off-white;
+	color: $text-darker;
+}
+
+.canvas {
+	width:75%;
+	margin: 0;
+	padding:15px 55px;
+	}
+
+ul {
+	list-style: none; 
+	margin: 10px 0 10px 0;
+	padding: 0;
+	}
+
+nav ul li {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+li {
+	font-size: 1rem;
+	line-height: 2rem;
+	font-weight: bold;
+}
+
+li a {
+	text-decoration: none;
+	color: $text-darker;
+
+}
+
+.sites li {
+	width: 100%;
+	height: 24px;
+	position: relative;
+	margin: 2px 0 2px 0;
+	padding: 10px;
+	float: left;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.sites li:hover {
+	background-color: darken($off-white, 10%);
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	opacity: .7;
+}
+
+
+.icon, .sites img {
+	float: right;
+	font-size: .7rem;
+	display: inline-block;
+	text-indent: -10000px;
+	background-size: 1.2rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 16px;
+	width: 16px;
+}
+
+.sites img, .sites .no-img {
+	float: left;
+	height: 16px;
+	width: 16px;
+	position: relative;
+	top: 10px;
+	background-color: #f9f9f9;
+}
+
+.sites .no-img {
+	background-color: lighten($off-white, 30%);
+}
+
+
+.wp {
+	background-color: #21759a;
+	background-image: url('/img/icon-wp.png');
+}
+
+.site {
+	padding: 0 10px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+
+@media all and (min-width: 699px) {
+
+	body {
+	}
+	
+	.canvas {
+		width:80%;
+		margin: 20px auto;
+		}
+	
+	.sites li {
+		width: 45%;
+		height: 2rem;
+		position: relative;
+		margin: 2px 3% 2px 0;
+		padding: 0;
+		float: left;
+	}
+	
+	nav ul li {
+	    display: inline;
+	    margin: 5px 5px 5px 0;
+	    padding: 4px 12px;
+		border-radius: 2px;
+		color: lighten($text-darker, 20%);
+		&:first-child {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		a {
+			-webkit-transition: .2s all ease;
+			-moz-transition: .2s all ease;
+			-ms-transition: .2s all ease;
+			-o-transition: .2s all ease;
+			transition: .2s all ease;
+			&:hover {
+				opacity: .5;
+				-webkit-transit: .3 all ease;
+				-moz-transit: .3 all ease;
+				-ms-transit: .3 all ease;
+				-o-transit: .3 all ease;
+				transit: .3 all ease;
+			}
+		}
+	}
+
+
+
+}
+
+.admin {
+	background-image: url('/img/icon-gear.png');
+}
+
